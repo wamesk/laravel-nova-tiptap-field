@@ -3957,7 +3957,6 @@ __webpack_require__.r(__webpack_exports__);
     var TextAlignConf = _tiptap_extension_text_align__WEBPACK_IMPORTED_MODULE_6__["default"].configure({
       types: ['heading', 'paragraph']
     });
-    console.log(this.value);
     this.editor = new _tiptap_vue_3__WEBPACK_IMPORTED_MODULE_13__.Editor({
       content: this.value,
       extensions: [LinkConf, PlaceholderConf, _tiptap_starter_kit__WEBPACK_IMPORTED_MODULE_3__["default"], _tiptap_extension_subscript__WEBPACK_IMPORTED_MODULE_4__["default"], _tiptap_extension_superscript__WEBPACK_IMPORTED_MODULE_5__["default"], TextAlignConf, _tiptap_extension_text_style__WEBPACK_IMPORTED_MODULE_7__["default"], _tiptap_extension_underline__WEBPACK_IMPORTED_MODULE_8__["default"], _extensions_small__WEBPACK_IMPORTED_MODULE_9__["default"], _extensions_app_link__WEBPACK_IMPORTED_MODULE_10__["default"], _extensions_modal_link__WEBPACK_IMPORTED_MODULE_11__["default"]],
@@ -4287,7 +4286,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_CodeEditor = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CodeEditor");
   var _component_EditorContent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("EditorContent");
   var _component_DefaultField = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("DefaultField");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("aaa "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_DefaultField, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_DefaultField, {
     field: $props.field,
     errors: _ctx.errors,
     "show-help-text": _ctx.showHelpText,
@@ -4453,7 +4452,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }, null, 8 /* PROPS */, ["editor"]))])];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["field", "errors", "show-help-text", "full-width-content"])], 64 /* STABLE_FRAGMENT */);
+  }, 8 /* PROPS */, ["field", "errors", "show-help-text", "full-width-content"]);
 }
 
 /***/ }),

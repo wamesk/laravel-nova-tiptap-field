@@ -192,6 +192,8 @@ export default {
             types: ['heading', 'paragraph'],
         })
 
+        console.log(this.value)
+
         this.editor = new Editor({
             content: this.value,
             extensions: [

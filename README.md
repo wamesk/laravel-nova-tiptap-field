@@ -1,1 +1,1 @@
-# Laravel Nova 4 Tiptap editor
+# Laravel Nova 4 Tiptap editor field

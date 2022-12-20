@@ -1,0 +1,195 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.toolbar .toolbar-group {
+  display: flex;
+  position: relative;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(var(--colors-gray-300));
+  border-radius: 0.25rem;
+  align-items: center;
+}
+.toolbar .toolbar-group span {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  height: 100%;
+  line-height: 1rem;
+  font-weight: bold;
+  color: rgba(var(--colors-gray-500));
+  cursor: hand;
+  cursor: pointer;
+}
+.toolbar .toolbar-group span:not([style*="display: none"]) {
+  border-left: 1px solid rgba(var(--colors-gray-300));
+}
+.toolbar .toolbar-group span:first-child:not([style*="display: none"]) {
+  border-left: none;
+  border-top-left-radius: 0.15rem;
+  border-bottom-left-radius: 0.15rem;
+}
+.toolbar .toolbar-group span:last-child:not([style*="display: none"]) {
+  border-top-right-radius: 0.15rem;
+  border-bottom-right-radius: 0.15rem;
+}
+.toolbar .toolbar-group span svg {
+  height: 0.8rem;
+  width: auto;
+  fill: rgba(var(--colors-gray-500));
+}
+.toolbar .toolbar-group span.is-active {
+  background-color: rgba(var(--colors-gray-500));
+  color: rgba(var(--colors-gray-100));
+}
+.toolbar .toolbar-group span.is-active svg {
+  height: 0.8rem;
+  width: auto;
+  fill: rgba(var(--colors-gray-100));
+}
+.toolbar .toolbar-group span:hover {
+  background-color: rgba(var(--colors-gray-100));
+}
+.toolbar .toolbar-group span:hover.is-active {
+  background-color: rgba(var(--colors-gray-300));
+  color: rgba(var(--colors-gray-500));
+}
+.toolbar .toolbar-group span:hover.is-active svg {
+  fill: rgba(var(--colors-gray-500));
+}
+.toolbar .toolbar-group span[disabled=true], .toolbar .toolbar-group span[disabled=true]:hover {
+  background-color: rgba(var(--colors-gray-100));
+  cursor: not-allowed;
+}
+.toolbar .toolbar-group span[disabled=true] svg, .toolbar .toolbar-group span[disabled=true]:hover svg {
+  fill: rgba(var(--colors-gray-300));
+}
+.toolbar .toolbar-group .toolbar-dropdown {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top: 30px;
+  background-color: rgba(var(--colors-white));
+  border-radius: 0.25rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+.toolbar .toolbar-group .toolbar-dropdown ul {
+  width: 100%;
+  list-style-type: none;
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li {
+  padding: 0.3rem 0.8rem;
+  color: rgba(var(--colors-gray-500));
+  border-bottom: 1px solid rgba(var(--colors-gray-100));
+  white-space: nowrap;
+  cursor: hand;
+  cursor: pointer;
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li:first-child {
+  border-top-left-radius: 0.15rem;
+  border-top-right-radius: 0.15rem;
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 0.15rem;
+  border-bottom-right-radius: 0.15rem;
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li.is-active {
+  background-color: rgba(var(--colors-gray-500));
+  color: rgba(var(--colors-gray-100));
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li:hover {
+  background-color: rgba(var(--colors-gray-100));
+}
+.toolbar .toolbar-group .toolbar-dropdown ul li:hover.is-active {
+  background-color: rgba(var(--colors-gray-300));
+  color: rgba(var(--colors-gray-500));
+}
+
+.editor .component-editor-content {
+  padding: 0;
+}
+.editor .component-editor-content .ProseMirror {
+  padding: 0.75rem;
+}
+.editor .component-editor-content .ProseMirror:focus {
+  outline: none;
+}
+.editor .component-editor-content .ProseMirror .is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: rgba(var(--colors-gray-400));
+  pointer-events: none;
+  height: 0;
+}
+.editor .component-editor-content .ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+.editor .component-editor-content .ProseMirror ul, .editor .component-editor-content .ProseMirror ol {
+  padding: 0 1rem;
+  list-style: auto;
+}
+.editor .component-editor-content .ProseMirror ul {
+  list-style: disc;
+}
+.editor .code_editor .code_area code {
+  top: -20px !important;
+}
+
+html.dark .toolbar .toolbar-group {
+  border-color: rgba(var(--colors-gray-700));
+}
+html.dark .toolbar .toolbar-group span {
+  color: rgba(var(--colors-gray-400));
+  border-color: rgba(var(--colors-gray-700));
+}
+html.dark .toolbar .toolbar-group span svg {
+  fill: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group span.is-active {
+  color: rgba(var(--colors-gray-900));
+  background-color: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group span.is-active svg {
+  fill: rgba(var(--colors-gray-900));
+}
+html.dark .toolbar .toolbar-group span:hover {
+  background-color: rgba(var(--colors-gray-700));
+}
+html.dark .toolbar .toolbar-group span:hover.is-active {
+  color: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group span:hover.is-active svg {
+  fill: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group span[disabled=true], html.dark .toolbar .toolbar-group span[disabled=true]:hover {
+  background-color: rgba(var(--colors-gray-700));
+}
+html.dark .toolbar .toolbar-group span[disabled=true] svg, html.dark .toolbar .toolbar-group span[disabled=true]:hover svg {
+  fill: rgba(var(--colors-gray-500));
+}
+html.dark .toolbar .toolbar-group .toolbar-dropdown {
+  background-color: rgb(30 41 59/var(--tw-bg-opacity));
+}
+html.dark .toolbar .toolbar-group .toolbar-dropdown ul li {
+  color: rgba(var(--colors-gray-500));
+  border-color: rgba(var(--colors-gray-700));
+}
+html.dark .toolbar .toolbar-group .toolbar-dropdown ul li.is-active {
+  color: rgba(var(--colors-gray-900));
+  background-color: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group .toolbar-dropdown ul li:hover {
+  background-color: rgba(var(--colors-gray-700));
+  color: rgba(var(--colors-gray-400));
+}
+html.dark .toolbar .toolbar-group .toolbar-dropdown ul li:hover.is-active {
+  color: rgba(var(--colors-gray-400));
+}
+html.dark .component-editor-content .ProseMirror .is-editor-empty:first-child::before {
+  color: rgba(var(--colors-gray-600));
+}
+

@@ -1,6 +1,7 @@
 {
     "name": "wamesk/laravel-nova-tiptap-field",
     "description": "Laravel Nova 4 Tiptap editor field.",
+    "version": "1.0.1",
     "keywords": [
         "laravel",
         "nova",
@@ -17,7 +18,6 @@
         }
     ],
     "require": {
-        "php": "^8.0|^8.1|^8.2",
         "laravel/nova": "^4.0"
     },
     "autoload": {

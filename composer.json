@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Wame\\Tiptap\\": "src/"
+            "Wame\\LaravelNovaTiptapField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Wame\\Tiptap\\FieldServiceProvider"
+                "Wame\\LaravelNovaTiptapField\\Providers\\LaravelNovaTiptapFieldServiceProvider"
             ]
         }
     },

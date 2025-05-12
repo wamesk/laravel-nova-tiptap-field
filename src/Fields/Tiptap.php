@@ -1,9 +1,8 @@
 <?php
 
-namespace Wame\Tiptap;
+namespace Wame\LaravelNovaTiptapField\Fields;
 
 use Laravel\Nova\Fields\Text;
-
 
 class Tiptap extends Text
 {

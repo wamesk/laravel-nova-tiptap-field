@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Wame\LaravelNovaTiptapField\Fields;
 
 use Laravel\Nova\Fields\Text;
@@ -12,5 +14,4 @@ class Tiptap extends Text
      * @var string
      */
     public $component = 'tiptap';
-
 }

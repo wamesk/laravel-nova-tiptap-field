@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Wame\LaravelNovaTiptapField\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -13,23 +15,21 @@ class LaravelNovaTiptapFieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        Nova::serving(function (ServingNova $event) {
-            Nova::script('tiptap', __DIR__ . '/../dist/js/field.js');
-            Nova::style('tiptap', __DIR__ . '/../dist/css/field.css');
+        Nova::serving(function (ServingNova $event): void {
+            Nova::script('tiptap', __DIR__ . '/../../dist/js/field.js');
+            Nova::style('tiptap', __DIR__ . '/../../dist/css/field.css');
         });
     }
-
-
+    
     /**
      * Register any application services.
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
-        //
-    }
 
+    }
 }

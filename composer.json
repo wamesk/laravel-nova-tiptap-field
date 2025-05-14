@@ -1,7 +1,7 @@
 {
     "name": "wamesk/laravel-nova-tiptap-field",
     "description": "Laravel Nova Tiptap editor field.",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "keywords": [
         "laravel",
         "nova",

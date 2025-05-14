@@ -134,7 +134,7 @@
                 width="100%"
                 :autofocus="true"
             />
-            <EditorContent v-else :editor="editor" class="block w-full form-control form-input form-input-bordered h-auto" />
+            <EditorContent v-else :editor="editor" class="w-full h-auto p-0 block form-control form-input form-control-bordered component-editor-content" />
         </div>
     </template>
   </DefaultField>
